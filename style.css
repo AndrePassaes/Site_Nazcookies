@@ -49,8 +49,16 @@ header nav ul li a{
     transition: all 250ms linear 0s;
 }
 
+nav a:hover{
+    color: #fff;
+}
+
 header img{
     height: 50px;
+}
+
+#checkbox-menu{
+    display: none;
 }
 
 p{
@@ -72,10 +80,7 @@ h2{
     font-size: 2rem;
 }
 
-nav a:hover{
-    color: #fff;
-    transition: 0.3s;
-}
+
 
 .nav-items{
     font-size: 1.5rem;
