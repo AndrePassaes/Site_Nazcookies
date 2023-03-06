@@ -1,9 +1,56 @@
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+
+*{ /*RESETANDO CONFIG PADRÃO HTML/CSS*/ 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: 0;
+    list-style: none;
+}
+
+/*CONFIGURANDO HTML/BODY - FONTES*/
+html, 
+body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+/*CONFIGURANDO LINKS NAVEGADOR */
+a{
+    text-decoration: none;
+}
+
+/*CONFIGURANDO HEADER*/
+
+header{
+    padding-top: 20px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin: auto;    
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li a{
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    transition: all 250ms linear 0s;
+}
+
+header img{
+    height: 50px;
 }
 
 p{
@@ -25,15 +72,6 @@ h2{
     font-size: 2rem;
 }
 
-header{
-    padding-top: 20px;
-}
-
-nav a{
-    text-decoration: none;
-    color: #222222;
-    padding: 0 1.5rem;
-}
 nav a:hover{
     color: #fff;
     transition: 0.3s;
@@ -61,7 +99,7 @@ textarea {
     border-radius: 10px;
 }
 
-.container {
+.container-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 95vh;
@@ -178,32 +216,3 @@ textarea {
 #about{
     background-color: #F5DEB3;
 }
-
-/*@media only screen and (min-width: 600px){
-    .container {
-        grid-template-rows: auto;
-       
-    }
-
-    .container .column-left{
-        flex-direction: row;
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-
-    .container .column-right{
-        flex-direction: row;
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-
-
-    .description {
-       grid-template-rows: 1fr 1fr;
-    }
-}
-  
