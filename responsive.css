@@ -1,0 +1,29 @@
+
+/*@media only screen and (min-width: 600px){
+    .container {
+        grid-template-rows: auto;
+       
+    }
+
+    .container .column-left{
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .container .column-right{
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+
+    .description {
+       grid-template-rows: 1fr 1fr;
+    }
+}
+  
