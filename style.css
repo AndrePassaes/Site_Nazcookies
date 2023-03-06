@@ -14,11 +14,11 @@
 html, 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;/*CHECAR SE SERÁ ESSE O TAMANHO DA FONTE*/
+    font-size: 14px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
-/*CONFIGURANDO LINKS NAVEGADOR */
+/*ESTILIZANDO LINKS NAVEGADOR */
 a{
     text-decoration: none;
 }
@@ -28,10 +28,8 @@ a{
 header{
     padding: 0px 20px;
     background-color: #F5DEB3;
-    /*border: solid black; /* TESTE DE CONTAINER*/
-
 }
-/*CHECAR MARGEM DO HEADER*/
+
 header .container{
     display: flex;
     align-items: center;
@@ -50,7 +48,6 @@ header nav ul li a{
     font-size: 1.2rem;
     padding: 1.5rem;
     transition: all 250ms linear 0s;
-    /*border: solid pink; TESTE DE CONTAINER*/
 
 }
 
@@ -58,49 +55,90 @@ nav a:hover{
     color: #fff;
 }
 
-header img{ /*checar se vai precisar alterar o padding*/
+header img{ 
     height: 50px;
-    /*border: solid green;*/
 }
 
 #checkbox-menu{
     display: none;
 }
 
-/*REFATORADO ATÉ AQUI*/
 
+/*ESTILIZANDO CONTAINER HOME E SOBRE*/
 
-p{
-    padding: 5px;
+.container-home,
+.description {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 0;
+    height: 100%;   
+    padding: 3rem 9vw;
 }
 
-/*nav{
-    height: 80px;
+.column-left,
+.side-left{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem 15vw;
-}*/
-
-h2{
-    margin-bottom: 68px;
-    text-align: center;
-    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #222222;
+    padding: 1rem 5rem;
 }
 
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
 
-
-.nav-items{
+.column-left,
+.side-left p{
+    margin-bottom: 2rem;
     font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.column-right,
+.side-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0rem;
+}
+
+.side-left h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.flavors-list li{
+    list-style-image: url(cookie.png);
+    font-size: 1.5rem;
+}
+
+#home-image{
+    width: 90%;
+    height: auto;
+    padding: 0rem 2rem;
+}
+
+#home,
+#about{
+    background-color: #F5DEB3;
 }
 
 form{
     display: flex;
     align-self: center;
-    height: 115vh;
+    justify-content: center;    
+    height: 100%;
     background-color: #222222;
-    color: #fff;
+    color: #fff;    
     padding: 8vh 30vw;
+    border: solid white;
+}
+
+form p{
+    justify-content: baseline;
 }
 
 input,
@@ -110,78 +148,6 @@ textarea {
     display: block;
     padding: 0.5rem 0.75rem;
     border-radius: 10px;
-}
-
-.container-home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 95vh;
-    padding: 3rem 15vw;
- 
-}
-
-.column-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: #222222;
-    padding: 0rem 2rem;
-
-}
-
-.column-left h1{
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
-
-.column-left p{
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.column-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.description {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 95vh;
-    padding: 3rem 15vw;    
-}
-
-.side-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: #222222;
-    padding: 0rem 1rem;
-}
-
-.side-left h2{
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
-
-.side-left p { 
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.flavors-list{
-    list-style-image: url(cookie.png);
-    font-size: 1.5rem;
-}
-
-#home-image{
-    width: 90%;
-    height: 75%;
 }
 
 #form-button{
@@ -200,7 +166,7 @@ textarea {
     transition: 0.3s;
 }
 
-#CTA-button{
+#CTA-button{       
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
@@ -215,17 +181,4 @@ textarea {
     background-color: #fff;
     color: #222222;
     transition: 0.3s;
-}
-
-#about-image{
-    width: 90%;
-    height: 75%;
-}
-
-#home{
-    background-color: #F5DEB3;
-}
-
-#about{
-    background-color: #F5DEB3;
 }
