@@ -102,7 +102,7 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0rem;    
 }
 
 .side-left h2{
@@ -123,7 +123,7 @@ header img{
 
 #home,
 #about{
-    background-color: #F5DEB3;
+    background-color: #F5DEB3;    
 }
 
 form{
@@ -134,11 +134,10 @@ form{
     background-color: #222222;
     color: #fff;    
     padding: 8vh 30vw;
-    border: solid white;
 }
 
 form p{
-    justify-content: baseline;
+    text-align: justify;
 }
 
 input,
@@ -147,7 +146,7 @@ textarea {
     width: 40vw;
     display: block;
     padding: 0.5rem 0.75rem;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 #form-button{
@@ -161,10 +160,15 @@ textarea {
     border-radius: 50px;
 }
 
-#form-button:hover{
+#form-button:hover {
     background: #fff;
     transition: 0.3s;
 }
+
+.flavor {
+    text-align: left;
+}
+
 
 #CTA-button{       
     padding: 1rem 3rem;
