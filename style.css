@@ -126,9 +126,11 @@ header img{
     background-color: #F5DEB3;    
 }
 
+/*ESTILIZANDO FORM*/
+
 form{
     display: flex;
-    align-self: center;
+    /*align-self: center;*/
     justify-content: center;    
     height: 100%;
     background-color: #222222;
@@ -149,6 +151,15 @@ textarea {
     border-radius: 10px;    
 }
 
+.flavor {
+    
+    display: flex;    
+    flex-direction: column;
+    text-align: left;
+}
+
+
+
 #form-button{
     margin-top: 30px;
     padding: 1rem 3rem;
@@ -164,11 +175,6 @@ textarea {
     background: #fff;
     transition: 0.3s;
 }
-
-.flavor {
-    text-align: left;
-}
-
 
 #CTA-button{       
     padding: 1rem 3rem;
